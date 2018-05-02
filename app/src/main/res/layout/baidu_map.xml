@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout1"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:text="@string/longitude"
+            android:background="@drawable/map_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:background="@drawable/map_shape2"
+            android:hint="经度"
+            android:id="@+id/editText_lg"
+            android:singleLine="true" />
+
+        <TextView
+            android:text="@string/latitude"
+            android:background="@drawable/map_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/map_shape2"
+            android:focusable="false"
+            android:layout_weight="1"
+            android:hint="纬度"
+            android:id="@+id/editText_la"
+            android:singleLine="true" />
+
+        <TextView
+            android:text="@string/speed"
+            android:background="@drawable/map_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:textAlignment="center" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/map_shape2"
+            android:focusable="false"
+            android:layout_weight="1"
+            android:hint="速度"
+            android:id="@+id/editText_sp"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:background="@drawable/map_shape"
+            android:text="@string/now_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="地址"
+            android:background="@drawable/map_shape2"
+            android:id="@+id/editText_site"
+            android:singleLine="true" />
+
+
+    </LinearLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/baiduMapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+</LinearLayout>
